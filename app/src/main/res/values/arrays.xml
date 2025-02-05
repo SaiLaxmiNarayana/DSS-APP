@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+        <!-- Add more years as needed -->
+    <string-array name="user_roles">
+        <item>INTERN</item>
+        <item>EMPLOYEE</item>
+    </string-array>
+    <string-array name="status_array">
+        <item>SELECT STATUS</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+</resources>

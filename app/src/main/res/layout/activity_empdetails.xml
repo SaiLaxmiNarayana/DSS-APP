@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dssback2"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:drawablePadding="16dp"
+        android:hint="Month "
+        android:layout_centerHorizontal="true"
+        android:entries="@array/months"
+        android:textColorHint="@color/black"
+        android:prompt="@string/select_month" />
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/monthSpinner"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_border2"
+        android:hint="@string/enter_year"
+        android:textColorHint="@color/black" />
+
+    <Spinner
+        android:id="@+id/userRoleSpinner"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/yearEditText"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableRight="@android:drawable/arrow_down_float"
+
+        android:drawablePadding="16dp"
+        android:entries="@array/user_roles"
+        android:hint="Month "
+        android:prompt="@string/select_user_role"
+        android:textColorHint="@color/black" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="800dp"
+        android:layout_marginTop="200dp"
+
+
+        android:layout_marginBottom="0dp"
+        android:foreground="@drawable/border"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/userRoleSpinner"
+            android:layout_marginTop="16dp" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="420dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dssback2"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/editTextUserId"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/custom_border2"
+        android:hint="Search User ID"
+        android:minHeight="48dp"
+        android:textColorHint="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutFilters"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEndDate"
+            android:layout_width="155dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="180dp"
+            android:text="Select End Date"
+
+            app:backgroundTint="@color/black"
+            app:cornerRadius="8dp"
+            app:iconGravity="textStart"
+            app:iconTint="@color/material_on_surface_emphasis_medium"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonStartDate"
+            android:layout_width="151dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:text="Select Start Date"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="8dp"
+            app:iconGravity="textStart"
+            app:iconTint="@color/material_on_surface_emphasis_medium"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="386dp"
+        android:layout_height="53dp">
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="1dp"
+            android:entries="@array/status_array"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="235dp"
+            android:backgroundTint="#000000"
+            android:text="Search"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewLeaveCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="150dp"
+        android:text="Leave Count: 0"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLeaveRequests"
+        android:layout_width="352dp"
+        android:layout_height="464dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp" />
+
+</LinearLayout>

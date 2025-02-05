@@ -1,0 +1,39 @@
+<!-- res/layout/custom_dialog_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="270dp"
+    android:layout_marginLeft="90dp"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter User ID"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/usernamee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter User Name"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Add any other views you want in your custom dialog here -->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Employee"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"/>
+</LinearLayout>

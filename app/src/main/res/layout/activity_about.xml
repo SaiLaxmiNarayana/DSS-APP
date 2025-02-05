@@ -1,0 +1,32 @@
+<!-- res/layout/activity_about.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/empback2"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:id="@+id/aboutDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a sample app that showcases..."
+        android:textSize="20sp"
+        android:layout_below="@id/aboutTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Add more TextViews or other UI elements as needed -->
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DSS</string>
+    <string-array name="user_roles_array">
+        <item>User_Role</item>
+        <item>CEO</item>
+        <item>EMPLOYEE</item>
+        <item>INTERN</item>
+
+        <!-- Add more options as needed -->
+    </string-array>
+    <string name="select_month">Select Month</string>
+    <string name="enter_year">Select Year</string>
+    <string name="select_user_role">Select Userrole</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string-array name="type_array">
+        <item>Type</item>
+        <item>Chargeble</item>
+        <item>Unchargeble</item>
+    </string-array>
+</resources>
